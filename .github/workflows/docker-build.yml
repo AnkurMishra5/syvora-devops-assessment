@@ -20,6 +20,17 @@ jobs:
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
+Docker Desktop - Hyper-V setup error
+An unexpected error occurred while setting up Docker with HyperV. Restart Docker Desktop to try again.
+
+If the issue persists, collect diagnostics and submit an issue ⁠.
+
+running Hyper-V engine: starting Hyper-V VM: status code not OK but 500: Unhandled exception: job failed with message: 'DockerDesktopVM' failed to start. (Virtual machine ID BEBBA023-B3E8-46B4-B723-BD73BBCB81AE)
+
+Not enough memory in the system to start the virtual machine DockerDesktopVM with ram size 1024 megabytes. (Virtual machine ID BEBBA023-B3E8-46B4-B723-BD73BBCB81AE)
+
+'DockerDesktopVM' could not initialize memory: Not enough memory resources are available to complete this operation. (0x8007000E). (Virtual machine ID BEBBA023-B3E8-46B4-B723-BD73BBCB81AE)
+Read our policy for uploaded diagnostic data⁠
         with:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/node-express-api:latest

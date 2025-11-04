@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: your-dockerhub-username/node-express-api
+  repository: ankdoc1/syvora-node-api
   tag: latest
   pullPolicy: Always
 
